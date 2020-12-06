@@ -33,10 +33,10 @@
 
 <style>
     .v-main-wrapper {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         max-width: 900px;
         margin: 0 auto;
     }
