@@ -1,21 +1,15 @@
 <template>
     <div class="v-main-wrapper">
-        <p>{{title}}</p>
-        <v-catalog />
-        <v-cart />
+        <keep-alive>
+            <router-view></router-view> 
+        </keep-alive>
     </div>
 </template>
 
 <script>
-    import vCatalog from './v-catalog.vue'
-    import vCart from './v-cart.vue'
 
     export default {
         name: "v-main-wrapper",
-        components: {
-            vCatalog,
-            vCart
-        },
         props: {},
         data() {
             return {
@@ -24,19 +18,12 @@
         },
         computed: {},
         methods: {},
-        watch: {},
-        mounted() {
-            console.log('Hello, I am alive!')
-        }
+        watch: {}
     }
 </script>
 
 <style>
     .v-main-wrapper {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
         max-width: 900px;
         margin: 0 auto;
     }
