@@ -10,7 +10,13 @@
       :key="item.article"
       :cart_item_data="item"
       @deleteFromCart="deleteFromCart(index)"
+      @increment="increment(index)"
+      @decrement="decrement(index)"
     />
+    <div class="v-cart__total">
+      <p class="total__name">Total:</p>
+      <p>{{ cartTotalCost }} p.</p>
+    </div>
   </div>
 </template>
 
@@ -34,9 +40,36 @@ export default {
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    cartTotalCost() {
+      let result = [];
+
+      if (this.cart_data.length) {
+        for (let item of this.cart_data) {
+          result.push(item.price * item.quantity);
+        }
+
+        result = result.reduce(function (sum, el) {
+          return sum + el;
+        })
+        return result;
+      } else {
+        return 0
+      }
+    },
+  },
   methods: {
-    ...mapActions(["DELETE_FROM_CART"]),
+    ...mapActions([
+      'DELETE_FROM_CART',
+      'INCREMENT_CART_ITEM',
+      'DECREMENT_CART_ITEM'
+    ]),
+    increment(index) {
+      this.INCREMENT_CART_ITEM(index)
+    },
+    decrement(index) {
+      this.DECREMENT_CART_ITEM(index)
+    },
     deleteFromCart(index) {
       this.DELETE_FROM_CART(index);
     },
@@ -44,5 +77,25 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.v-cart {
+  margin: 0 0 100px 0;
+  &__total {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: $padding * 2 $padding * 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $green-bg;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .total__name {
+    margin: $margin * 2 $margin * 2 $margin * 2 0;
+  }
+}
 </style>
