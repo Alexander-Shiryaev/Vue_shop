@@ -2,22 +2,24 @@
 
 .btn {
     padding: $padding $padding*2;
-    background: $green-bg;
+    background: $bg-color;
     cursor: pointer;
     color: #fff;
     border: none;
     border-radius: $radius;
     outline: none;
-    box-sizing: border-box;
+    &:hover {
+        background: #fff;
+        color: $bg-color;
+        border: 1px solid $bg-color;
+        box-sizing: border-box;
+        margin: -1px;
+    }
+    &:active {
+        background: $bg-color;
+        color: #fff;
+    }
 }
 
-.btn:hover {
-    background: #fff;
-    color: $green-bg;
-    font-weight: 700;
-}
 
-.btn:active {
-    background: #26ae68;
-    color: #fff;
-}
+

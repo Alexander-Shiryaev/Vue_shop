@@ -2,51 +2,111 @@
   "products": [
     {
       "image": "1.jpg",
-      "name": "T-shirt 1",
-      "price": 2100.234234234,
+      "name": "Ноутбук ASUS",
+      "model": "VivoBook S14 M433IA-EB400T",
+      "color": "Indie Black",
+      "price": 45990,
       "article": "T1",
-      "available": true,
-      "category": "Мужские"
+      "available": true
     },
     {
       "image": "2.jpg",
-      "name": "T-shirt 2",
-      "price": 3150.12312412,
+      "name": "Ноутбук HONOR",
+      "model": "MagicBook 15 (53010UAV)",
+      "color": "Космический серый",
+      "price": 49872,
       "article": "T2",
-      "available": true,
-      "category": "Женские"
+      "available": true
     },
     {
       "image": "3.jpg",
-      "name": "T-shirt 3",
-      "price": 4200.51524,
+      "name": "Ноутбук Lenovo",
+      "model": "IdeaPad 5 14ARE05 (81YM002ERU)",
+      "color": "Light teal",
+      "price": 53490,
       "article": "T3",
-      "available": false,
-      "category": "Женские"
+      "available": false
     },
     {
       "image": "4.jpg",
-      "name": "T-shirt 4",
-      "price": 5300.1245512,
+      "name": "Ноутбук HP",
+      "model": "15s-eq0004ur (8PK78EA)",
+      "color": "Белоснежно-белый",
+      "price": 54449,
       "article": "T4",
-      "available": true,
-      "category": "Мужские"
+      "available": true
     },
     {
       "image": "5.jpg",
-      "name": "T-shirt 5",
-      "price": 6500.3522314,
+      "name": "Ноутбук Acer",
+      "model": "Extensa 15 EX215-53G-591Q (NX.EGCER.00K)",
+      "color": "Чёрный",
+      "price": 55430,
       "article": "T5",
-      "available": false,
-      "category": "Женские"
+      "available": false
     },
     {
-      "image": "6.jpeg",
-      "name": "T-shirt 6",
-      "price": 8700.4124123,
+      "image": "6.jpg",
+      "name": "Ноутбук Acer",
+      "model": "Aspire 3 A315-42-R5L9 (NX.HF9ER.03K)",
+      "color": "Чёрный",
+      "price": 59990,
       "article": "T6",
-      "available": true,
-      "category": "Женские"
+      "available": true
+    },
+    {
+      "image": "7.jpg",
+      "name": "Ноутбук ASUS",
+      "model": "M509DJ-BQ055T (90NB0P22-M00940)",
+      "color": "Серый",
+      "price": 63490,
+      "article": "T7",
+      "available": true
+    },
+    {
+      "image": "8.jpg",
+      "name": "Ноутбук HP",
+      "model": "15s-eq1177ur (22R24EA)",
+      "color": "Грифельно-серый",
+      "price": 64590,
+      "article": "T8",
+      "available": true
+    },
+    {
+      "image": "9.jpg",
+      "name": "Ноутбук Acer",
+      "model": "SWIFT 3 SF314-57-527S (NX.HJKER.008)",
+      "color": "Розовый",
+      "price": 65990,
+      "article": "T9",
+      "available": true
+    },
+    {
+      "image": "10.jpg",
+      "name": "Ноутбук Acer",
+      "model": "SWIFT 3 SF314-57-519E (NX.HJHER.004)",
+      "color": "Голубой",
+      "price": 65990,
+      "article": "T10",
+      "available": true
+    },
+    {
+      "image": "11.jpg",
+      "name": "Ноутбук Xiaomi",
+      "model": "RedmiBook 13 (XMA1903-AN)",
+      "color": "Серебристый",
+      "price": 82990,
+      "article": "T11",
+      "available": true
+    },
+    {
+      "image": "12.jpg",
+      "name": "Ноутбук Acer",
+      "model": "Nitro 5 AN517-52-76FC (NH.Q82ER.008)",
+      "color": "Чёрный",
+      "price": 100990,
+      "article": "T12",
+      "available": true
     }
   ]
 }
