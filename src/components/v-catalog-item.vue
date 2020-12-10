@@ -6,12 +6,14 @@
       alt="image"
     />
     <p class="v-catalog-item__name">{{ product_data.name }}</p>
-    <p class="v-catalog-item__price">Price: {{ product_data.price }} p</p>
+    <p class="v-catalog-item__model">{{ product_data.model }}</p>
+    <p class="v-catalog-item__color">{{ product_data.color }}</p>
+    <p class="v-catalog-item__price">Цена: {{ product_data.price }} &#8381;</p>
     <button
       class="v-catalog-item__add_to_cart_btn btn"
       @click="addToCart"
     >
-      Add to cart
+      В корзину
     </button>
   </div>
 </template>
@@ -44,12 +46,15 @@ export default {
 
 <style lang="scss">
 .v-catalog-item {
-  flex-basis: 25%;
+  flex-basis: 20%;
   box-shadow: 0 0 8px 0 #e0e0e0;
   padding: $padding * 2;
   margin: 0 0 $margin * 2 0;
   &__image {
-    width: 100px;
+    height: 100px;
+  }
+  &:hover {
+    box-shadow: 0 0 8px 8px #eee;
   }
 }
 </style>

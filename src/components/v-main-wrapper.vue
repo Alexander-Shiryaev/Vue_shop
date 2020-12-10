@@ -3,13 +3,18 @@
         <keep-alive>
             <router-view></router-view> 
         </keep-alive>
+    <v-form />
     </div>
 </template>
 
 <script>
+    import vForm from "./v-form.vue";
 
     export default {
         name: "v-main-wrapper",
+        components: {
+            vForm,
+        },
         props: {},
         data() {
             return {

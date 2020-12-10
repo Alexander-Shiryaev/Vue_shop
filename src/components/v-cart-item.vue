@@ -11,19 +11,23 @@
       <p>{{ cart_item_data.article }}</p>
     </div>
     <div class="v-cart-item__quantity">
-      <p>Qty:</p>
+      <p>Кол-во:</p>
       <span>
-        <span class="quantity__btn" @click="decrementItem">-</span>
+        <button class="quantity__btn" @click="decrementItem">-</button>
         {{ cart_item_data.quantity }}
-        <span class="quantity__btn" @click="incrementItem">+</span>
+        <button class="quantity__btn" @click="incrementItem">+</button>
       </span>
     </div>
-    <button @click="deleteFromCart">Delete</button>
+    <button 
+      class="btn" 
+      @click="deleteFromCart"
+      >
+      Убрать из корзины
+    </button>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "v-cart-item",
   props: {
@@ -40,11 +44,11 @@ export default {
   computed: {},
   methods: {
     decrementItem() {
-      this.$emit('decrement')
+      this.$emit("decrement");
     },
 
     incrementItem() {
-      this.$emit('increment')
+      this.$emit("increment");
     },
 
     deleteFromCart() {
@@ -70,5 +74,15 @@ export default {
 
 .quantity__btn {
   cursor: pointer;
+  background: #fff;
+  border: 1px solid #555;
+  border-radius: $radius;
+  outline: none;
+  &:hover {
+    background: #ececec;
+  }
+  &:active {
+    background: #fff;
+  }
 }
 </style>
